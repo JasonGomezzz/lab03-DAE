@@ -19,3 +19,8 @@ Se ejecutan las migraciones base con `python manage.py migrate` y se inicia el s
 Se habilitó la interfaz administrativa para el modelo `Movie`. Se configuró la clase `MovieAdmin` con visualización de columnas, buscador dinámico y filtros laterales para una gestión eficiente del catálogo.
 
 ![Admin de la nueva Aplicación Movies](./docs/o4-admin.png)
+
+## Visualización en el Frontend
+Se implementó la vista `movie_list` para consultar la base de datos y renderizar los registros en un template HTML dinámico. Se configuró el enrutamiento para que el catálogo sea accesible desde la raíz del sitio, completando la integración total del proyecto.
+
+![Visualización en el Frontend](./docs/o5-frontend.png)
