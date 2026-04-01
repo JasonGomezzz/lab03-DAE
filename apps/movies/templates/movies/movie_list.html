@@ -1,0 +1,6 @@
+<h1>CINESPOILERS - Listado de Películas</h1>
+<ul>
+    {% for movie in movies %}
+        <li><strong>{{ movie.title }}</strong> - {{ movie.release_date }}</li>
+    {% endfor %}
+</ul>
