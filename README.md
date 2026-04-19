@@ -1,26 +1,34 @@
-# Jason Gomez Mancha
+# CINESPOILERS - API REST PROFESIONAL 🎬
+**Desarrollador:** Jason Gomez Mancha  
+**Institución:** Tecsup (Diseño y Desarrollo de Software)
 
-## Creación del repositorio
-Se inicializa el repositorio con la carpeta raíz **CINESPOILERS**, organizando los recursos multimedia en la carpeta **/docs**.
+## 🚀 Descripción
+Evolución del sistema Cinespoilers a una arquitectura de **API RESTful** utilizando **Django Rest Framework**, permitiendo la gestión completa (CRUD) de la base de datos de películas.
 
-![Creación del repositorio](./docs/o1-repository.png)
+---
 
-## Preparación del ambiente
-Se configura el entorno virtual `.venv` y se realiza la instalación de **Django 6**, asegurando un ambiente de desarrollo aislado y escalable.
+## 📡 Evidencias del CRUD (Pruebas de Integración)
 
-![Preparación del ambiente](./docs/o2-environment.png)
+| Operación | Método | Endpoint | Resultado |
+| :--- | :--- | :--- | :--- |
+| **CREATE** | `POST` | `/api/movies/` | ![POST](./docs/api-post.png) |
+| **READ ALL** | `GET` | `/api/movies/` | ![GET ALL](./docs/api-get-all.png) |
+| **READ ONE** | `GET` | `/api/movies/2/` | ![GET ONE](./docs/api-get-single.png) |
+| **UPDATE** | `PATCH`| `/api/movies/1/` | ![PATCH](./docs/api-update.png) |
+| **DELETE** | `DELETE`| `/api/movies/2/` | ![DELETE](./docs/api-delete.png) |
 
-## Levantamiento del ambiente
-Se ejecutan las migraciones base con `python manage.py migrate` y se inicia el servidor de desarrollo. El proyecto queda centralizado en la carpeta **/config**.
+### 🖥️ Interfaz Web (Browsable API)
+Visualización de los recursos desde el navegador:
+![Web View](./docs/api-web-view.png)
 
-![Levantamiento del ambiente](./docs/o3-run.png)
+### 📊 Logs de Actividad del Servidor
+Registro técnico de las peticiones HTTP (200, 201, 204) procesadas en tiempo real:
+![Logs](./docs/Server-logs.png)
 
-## Admin de la nueva Aplicación Movies
-Se habilitó la interfaz administrativa para el modelo `Movie`. Se configuró la clase `MovieAdmin` con visualización de columnas, buscador dinámico y filtros laterales para una gestión eficiente del catálogo.
+---
 
-![Admin de la nueva Aplicación Movies](./docs/o4-admin.png)
-
-## Visualización en el Frontend
-Se implementó la vista `movie_list` para consultar la base de datos y renderizar los registros en un template HTML dinámico. Se configuró el enrutamiento para que el catálogo sea accesible desde la raíz del sitio, completando la integración total del proyecto.
-
-![Visualización en el Frontend](./docs/o5-frontend.png)
+## ⚙️ Instalación y Ejecución
+1. Crear ambiente: `python -m venv venv`
+2. Activar: `.\venv\Scripts\activate`
+3. Instalar: `pip install -r requirements.txt`
+4. Correr: `python manage.py runserver`
